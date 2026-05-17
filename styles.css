@@ -1,0 +1,1025 @@
+/* ========================================
+   ERICK ROMO INMOBILIARIA - DORADO LUXURY
+======================================== */
+
+:root {
+    /* Colores LOGO DORADO/NEGRO */
+    --dorado-primario: #D4AF37;
+    --dorado-oscuro: #B8962E;
+    --dorado-claro: #E8D5A3;
+    --negro-primario: #1A1A1A;
+    --negro-secundario: #2D2D2D;
+    --gris-elegante: #4A4A4A;
+    --gris-claro: #F5F5F5;
+    --crema-suave: #FAF7F0;
+    --blanco-puro: #FFFFFF;
+
+    /* Sombras y efectos */
+    --shadow-dorado: rgba(212, 175, 55, 0.3);
+    --shadow-negro: rgba(26, 26, 26, 0.15);
+    --border-dorado: rgba(212, 175, 55, 0.2);
+
+    /* Transiciones elegantes */
+    --transition-suave: 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    --radius-elegante: 20px;
+}
+
+/* ========================================
+   RESET Y BASE (CORREGIDO)
+======================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(180deg, var(--crema-suave) 0%, var(--gris-claro) 100%);
+    color: var(--negro-primario);
+    line-height: 1.7;
+    padding-top: 0;
+
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* TIPOGRAFÍA */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    color: var(--negro-primario);
+}
+
+/* ========================================
+   MEDIA GLOBAL FIX
+======================================== */
+
+img, video, iframe {
+    max-width: 100%;
+    height: auto;
+}
+
+/* seguridad extra para evitar overflow */
+section, div {
+    box-sizing: border-box;
+}
+
+/* ==========================
+   NAVBAR COMPACTO & LUXURY
+========================== */
+/* ==========================
+   NAVBAR TRANSPARENTE & COMPACTO
+========================== */
+/* ==========================
+   NAVBAR SEMI-TRANSPARENTE & ELEGANTE
+========================== */
+.navbar-custom {
+    background: rgba(0, 0, 0, 0.4); /* negro semi-transparente */
+    backdrop-filter: blur(10px); /* suaviza la imagen de fondo detrás */
+    border-bottom: none;
+    padding: 0.5rem 0; /* más compacto */
+    font-family: 'Playfair Display', serif;
+    transition: all 0.4s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.navbar-custom.scrolled {
+    background: rgba(0, 0, 0, 0.85); /* más oscuro al hacer scroll */
+    box-shadow: 0 5px 25px rgba(0,0,0,0.2);
+}
+
+.navbar-logo {
+    height: 50px;
+    width: auto;
+    border-radius: 8px;
+    filter: drop-shadow(0 2px 6px rgba(0,0,0,0.5));
+}
+
+.brand-text {
+    color: #ffd700; /* dorado brillante */
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 1.2;
+}
+
+.brand-subtitle {
+    font-size: 0.75rem;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff !important; /* siempre visible */
+    font-weight: 500;
+    padding: 0.4rem 1rem;
+    margin: 0 0.25rem;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: #ffd700 !important; /* dorado al pasar */
+    background: rgba(255,215,0,0.1); /* fondo dorado muy suave */
+    transform: translateY(-1px);
+}
+
+
+:root {
+    --navbar-height: 70px; /* ajusta si tu navbar es más alto */
+}
+
+.hero-section {
+    margin-top: var(--navbar-height);
+}
+/* HERO ELEGANTE */
+.hero-section { min-height: 100vh; position: relative; }
+.hero-slide {
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(26,26,26,0.85) 0%, rgba(45,45,45,0.7) 100%);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: var(--blanco-puro);
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.hero-badge {
+    background: linear-gradient(135deg, var(--dorado-primario), var(--dorado-oscuro));
+    color: var(--negro-primario);
+    padding: 1rem 2.5rem;
+    border-radius: 50px;
+    font-weight: 700;
+    display: inline-block;
+    letter-spacing: 1px;
+    box-shadow: 0 12px 35px var(--shadow-dorado);
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+.hero-title {
+    font-size: clamp(3rem, 8vw, 5.5rem);
+    font-weight: 800;
+    background: linear-gradient(135deg, var(--blanco-puro), var(--dorado-claro));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 1.5rem;
+    text-shadow: 0 6px 25px rgba(0,0,0,0.6);
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    opacity: 0.95;
+}
+
+.hero-price {
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    font-weight: 800;
+    background: linear-gradient(135deg, var(--dorado-primario), var(--dorado-oscuro));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 2.5rem;
+}
+
+.hero-features {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.hero-features span {
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(10px);
+    padding: 1rem 1.5rem;
+    border-radius: 25px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+/* BOTONES LUXURY */
+.btn-elegante {
+    padding: 1.3rem 3rem;
+    font-weight: 600;
+    border-radius: 50px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.1rem;
+    position: relative;
+    overflow: hidden;
+    transition: all var(--transition-suave);
+}
+
+.btn-dorado {
+    background: linear-gradient(135deg, var(--dorado-primario), var(--dorado-oscuro));
+    color: var(--negro-primario);
+    box-shadow: 0 15px 40px var(--shadow-dorado);
+}
+
+.btn-dorado:hover {
+    transform: translateY(-8px) scale(1.05);
+    box-shadow: 0 25px 50px var(--shadow-dorado);
+    color: var(--negro-primario);
+}
+
+/* SECCIONES */
+.section-padding { padding: 8rem 0; }
+.section-header { text-align: center; margin-bottom: 5rem; }
+.section-badge {
+    background: linear-gradient(135deg, var(--dorado-primario), var(--dorado-oscuro));
+    color: var(--negro-primario);
+    padding: 0.75rem 2rem;
+    border-radius: 50px;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 8px 25px var(--shadow-dorado);
+}
+
+
+/* Separación entre secciones */
+.property-section {
+    padding-top: 80px;  /* espacio arriba */
+    padding-bottom: 80px; /* espacio abajo, opcional */
+}
+
+
+.section-title {
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    background: linear-gradient(135deg, var(--dorado-primario), var(--dorado-oscuro));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 1rem;
+}
+
+.section-subtitle {
+    font-size: 1.3rem;
+    color: var(--gris-elegante);
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.asesora-section {
+    padding: 80px 0;
+    position: relative;
+}
+
+/* TARJETA */
+.asesora-card {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+
+    padding: 35px;
+
+    border-radius: 20px;
+    background: #fff;
+
+    box-shadow: 0 20px 50px rgba(0,0,0,0.12);
+
+    transition: all 0.4s ease;
+    z-index: 2;
+}
+
+/* 🔥 GLOW FUERA DEL CONTENEDOR */
+.asesora-section::before {
+    content: "";
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 600px;
+    height: 300px;
+
+    background: radial-gradient(circle, rgba(176,141,87,0.35), transparent 70%);
+    
+    filter: blur(60px);
+    z-index: 1;
+
+    opacity: 0.6;
+    transition: 0.4s;
+}
+
+/* HOVER MÁS INTENSO */
+.asesora-section:hover::before {
+    opacity: 0.9;
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+/* HEADER */
+.asesora-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+/* CÍRCULO */
+.asesora-img {
+    width: 95px;
+    height: 95px;
+
+    border-radius: 50%;
+    overflow: hidden;
+
+    border: 4px solid #fff;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    transition: 0.4s;
+}
+
+.asesora-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* TEXTO */
+.asesora-header h3 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.asesora-header span {
+    font-size: 0.9rem;
+    color: #b08d57;
+    font-weight: 600;
+}
+
+.asesora-card p {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+/* HOVER TARJETA */
+.asesora-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 30px 80px rgba(0,0,0,0.18);
+}
+
+.asesora-card:hover .asesora-img {
+    transform: scale(1.08);
+}
+
+
+
+
+
+
+
+
+
+
+/* ==========================
+   CATÁLOGO LUXURY
+========================== */
+.catalogo-luxury {
+    padding: 6rem 0;
+}
+
+/* TARJETA */
+.card-propiedad {
+    background: var(--blanco-puro);
+    border-radius: var(--radius-elegante);
+    overflow: hidden;
+    box-shadow: 0 20px 60px var(--shadow-negro);
+    transition: all var(--transition-suave);
+    border: 1px solid var(--border-dorado);
+    height: 100%;
+}
+
+.card-propiedad:hover {
+    transform: translateY(-15px) scale(1.02);
+    box-shadow: 0 35px 80px var(--shadow-dorado);
+}
+
+/* IMAGEN */
+.img-container {
+    position: relative;
+    height: 260px;
+    overflow: hidden;
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.card-propiedad:hover img {
+    transform: scale(1.15);
+}
+
+/* OVERLAY */
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, transparent 40%, rgba(0,0,0,0.8));
+}
+
+/* PRECIO */
+.precio {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    background: linear-gradient(135deg, var(--dorado-primario), var(--dorado-oscuro));
+    color: var(--negro-primario);
+    padding: 0.6rem 1.4rem;
+    border-radius: 30px;
+    font-weight: 700;
+    box-shadow: 0 8px 25px var(--shadow-dorado);
+}
+
+/* CONTENIDO */
+.contenido {
+    padding: 1.8rem;
+    text-align: center;
+}
+
+.contenido h5 {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+}
+
+.contenido p {
+    color: var(--gris-elegante);
+    margin-bottom: 1.5rem;
+}
+
+/* BOTÓN */
+.btn-propiedad {
+    display: inline-block;
+    width: 100%;
+    padding: 0.9rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    background: transparent;
+    border: 2px solid var(--dorado-primario);
+    color: var(--dorado-oscuro);
+    transition: all var(--transition-suave);
+}
+
+.btn-propiedad:hover {
+    background: linear-gradient(135deg, var(--dorado-primario), var(--dorado-oscuro));
+    color: var(--negro-primario);
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px var(--shadow-dorado);
+}
+
+
+
+
+
+.banner-wrapper {
+    max-width: 1350px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+/* 👇 Aquí está la clave */
+.banner-wrapper img {
+    width: 100%;
+    height: 700px; /* 🔥 esto evita que se corte */
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+/* Hover */
+.banner-wrapper:hover img {
+    transform: scale(1.03);
+}
+
+
+
+
+
+
+
+
+
+/* CARDS LUXURY */
+.card-luxury {
+    background: var(--blanco-puro);
+    border-radius: var(--radius-elegante);
+    padding: 3rem 2.5rem;
+    box-shadow: 0 25px 70px var(--shadow-negro);
+    border: 1px solid var(--border-dorado);
+    transition: all var(--transition-suave);
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+}
+
+.card-luxury::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, transparent, var(--dorado-primario), transparent);
+    transform: scaleX(0);
+    transition: transform 0.7s ease;
+}
+
+.card-luxury:hover::before { transform: scaleX(1); }
+.card-luxury:hover {
+    transform: translateY(-20px);
+    box-shadow: 0 40px 90px var(--shadow-dorado);
+}
+
+.icono-dorado {
+    width: 90px;
+    height: 90px;
+    background: linear-gradient(135deg, var(--dorado-primario), var(--dorado-oscuro));
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--negro-primario);
+    font-size: 2.2rem;
+    margin: 0 auto 2rem;
+    box-shadow: 0 15px 40px var(--shadow-dorado);
+    transition: all var(--transition-suave);
+}
+
+.card-luxury:hover .icono-dorado {
+    transform: scale(1.15) rotate(360deg);
+}
+
+.luxury-list {
+    list-style: none;
+}
+
+.luxury-list li {
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.1rem;
+}
+
+.luxury-list li:last-child { border-bottom: none; }
+
+/* GALERÍA */
+.gallery-section { background: var(--gris-claro); }
+.property-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--radius-elegante);
+    box-shadow: 0 15px 45px var(--shadow-negro);
+    transition: all var(--transition-suave);
+    height: 100%;
+}
+
+.property-card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 30px 70px var(--shadow-dorado);
+}
+
+.property-img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+}
+
+.property-card:hover .property-img { transform: scale(1.1); }
+
+.property-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0,0,0,0.85));
+    color: var(--blanco-puro);
+    padding: 2rem;
+}
+
+.property-price {
+    background: var(--dorado-primario);
+    color: var(--negro-primario);
+    padding: 0.5rem 1.5rem;
+    border-radius: 25px;
+    font-weight: 700;
+}
+
+
+.plano-wrapper {
+    max-width: 700px;   /* controla qué tan grande se ve */
+    margin: 0 auto;     /* lo centra */
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.plano-img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.plano-wrapper:hover .plano-img {
+    transform: scale(1.03);
+}
+
+
+
+
+.luxury-list li {
+    transition: all 0.3s ease;
+    padding: 6px 10px;
+    border-radius: 8px;
+    cursor: default;
+}
+
+/* ✨ HOVER */
+.luxury-list li:hover {
+    background: rgba(176,141,87,0.12); /* dorado suave */
+    transform: translateX(8px);
+    color: #000;
+}
+
+.card-luxury p {
+    position: relative;
+    padding: 6px 10px;
+    margin: 0;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+}
+
+/* línea lateral */
+.card-luxury p::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 0;
+    height: 70%;
+    background: #b08d57;
+
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+/* hover */
+.card-luxury p:hover {
+    padding-left: 18px;
+    transform: translateX(5px);
+    background: rgba(176,141,87,0.12);
+}
+
+.card-luxury p:hover::before {
+    width: 4px;
+}
+
+
+
+
+
+
+.video-section {
+    padding: 70px 0;
+    text-align: center;
+}
+
+.video-title {
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+    font-weight: 600;
+    color: #222;
+}
+
+.video-wrapper {
+    position: relative;
+    max-width: 1000px;
+    margin: auto;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+}
+
+/* VIDEO REAL */
+.video-wrapper video {
+    width: 100%;
+    display: block;
+}
+
+/* Botón play decorativo */
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 80px;
+    height: 80px;
+
+    background: rgba(0,0,0,0.6);
+    color: #fff;
+    font-size: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.play-button:hover {
+    background: rgba(0,0,0,0.8);
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+
+/* LOCATION */
+.location-section { background: var(--blanco-puro); }
+.map-container {
+    border-radius: var(--radius-elegante);
+    overflow: hidden;
+    box-shadow: 0 25px 70px var(--shadow-negro);
+}
+
+#ubicacion {
+    padding-top: 100px; /* más espacio desde la sección anterior */
+    padding-bottom: 80px;
+}
+
+
+
+
+/* CTA */
+.cta-luxury {
+    background: linear-gradient(135deg, var(--negro-primario) 0%, var(--negro-secundario) 100%);
+    padding: 7rem 0;
+    text-align: center;
+    color: var(--blanco-puro);
+}
+
+.cta-luxury h2 {
+    font-size: clamp(3rem, 8vw, 4.5rem);
+    background: linear-gradient(135deg, var(--dorado-primario), var(--dorado-claro));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+
+
+
+
+
+
+/*contacto*/
+.contacto-section {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.contacto-flex {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+/* CÍRCULOS */
+.contact-circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+
+    background: #f5f5f5;
+    color: #333;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+
+    transition: all 0.3s ease;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+/* ICONO */
+.contact-circle i {
+    font-size: 1.8rem;
+    margin-bottom: 6px;
+    color: #b08d57; /* dorado elegante */
+}
+
+/* TEXTO */
+.contact-circle span {
+    font-size: 0.85rem;
+}
+
+/* HOVER PREMIUM */
+.contact-circle:hover {
+    background: #b08d57;
+    color: #fff;
+    transform: translateY(-8px) scale(1.05);
+    box-shadow: 0 15px 35px rgba(176,141,87,0.4);
+}
+
+.contact-circle:hover i {
+    color: #fff;
+}
+
+
+
+
+
+.map-container {
+    width: 100%;
+    height: 100%;
+    min-height: 500px; /* opcional pero recomendado */
+    border-radius: var(--radius-elegante);
+    overflow: hidden;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+.footer {
+    background: var(--negro-primario);
+    color: var(--blanco-puro);
+    padding: 4rem 0 2rem;
+}
+
+.footer-logo {
+    height: 60px;
+    filter: brightness(0) invert(1);
+}
+
+.footer h5 {
+    color: var(--dorado-primario);
+    margin-bottom: 0.5rem;
+}
+
+.footer-links a {
+    color: var(--blanco-puro);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: inline-block;
+    transition: all var(--transition-suave);
+}
+
+.footer-links a:hover {
+    color: var(--dorado-primario);
+    transform: translateX(5px);
+}
+
+/* =========================
+   WHATSAPP LUXURY (FIX FINAL)
+========================= */
+
+.whatsapp-luxury {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+
+    width: 70px;
+    height: 70px;
+
+    background: linear-gradient(135deg, var(--dorado-primario), var(--dorado-oscuro));
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 2rem;
+    color: var(--negro-primario);
+
+    box-shadow: 0 20px 50px var(--shadow-dorado);
+
+    z-index: 999999; /* suficientemente alto */
+
+    transition: transform var(--transition-suave);
+
+    animation: pulse-dorado 2s infinite;
+}
+
+/* Hover solo desktop */
+.whatsapp-luxury:hover {
+    transform: scale(1.15);
+}
+
+/* Animación */
+@keyframes pulse-dorado {
+    0% { box-shadow: 0 0 0 0 var(--shadow-dorado); }
+    70% { box-shadow: 0 0 0 20px rgba(212, 175, 55, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(212, 175, 55, 0); }
+}
+
+/* =========================
+   FIX MOBILE (IMPORTANTE)
+========================= */
+
+@media (max-width: 768px) {
+
+    .whatsapp-luxury {
+        width: 58px;
+        height: 58px;
+
+        right: 15px;
+        bottom: 15px;
+
+        font-size: 1.6rem;
+
+        z-index: 9999999;
+
+        /* evita glitches táctiles */
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+    }
+}
+
+/* =========================
+   EVITAR TOQUES RAROS MOBILE
+========================= */
+
+* {
+    -webkit-tap-highlight-color: transparent;
+}

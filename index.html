@@ -1,0 +1,1409 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Casas y Terrenos en venta -  Inmobiliaria">
+    <title>Asesora | Inmobiliaria</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+<nav class="navbar navbar-expand-lg fixed-top navbar-custom">
+    <div class="container">
+
+        <a class="navbar-brand d-flex flex-column lh-sm" href="#">
+            <span class="brand-text fw-bold" style="font-size:1.25rem; letter-spacing:0.5px;">
+                Inmobiliaria
+            </span>
+            <span class="brand-subtitle" style="font-size:0.85rem; opacity:0.8;">
+                Asesora
+            </span>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#propiedad">Propiedad</a></li>
+                <li class="nav-item"><a class="nav-link" href="#galeria">Galería</a></li>
+                <li class="nav-item"><a class="nav-link" href="#ubicacion">Ubicación</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<header id="inicio" class="hero-section">
+
+    <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+
+        <div class="carousel-inner">
+
+            <!-- Slide Rancho -->
+            <div class="carousel-item active">
+                <div class="hero-slide" style="background-image: url('images/terreno2.jpeg');">
+                    <div class="hero-overlay"></div>
+                    <div class="hero-content">
+
+                        <h1 class="hero-title">Rancho en Lagos de Moreno</h1>
+                        <p class="hero-subtitle">1700 hectáreas con acceso controlado y excelente conectividad</p>
+
+                        <div class="hero-features">
+                            <span>🌿 1300 hectáreas planas</span>
+                            <span>💧 Manantial y pozo de agua</span>
+                            <span>⚡ Cuenta con electricidad</span>
+                            <span>🚜 Acceso para maquinaria pesada</span>
+                        </div>
+
+                        <a href="#contacto" class="btn-elegante btn-dorado">
+                            <i class="bi bi-whatsapp me-2"></i>Más información
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide Arandas -->
+            <div class="carousel-item">
+                <div class="hero-slide" style="background-image: url('images/arandas1.jpeg');">
+                    <div class="hero-overlay"></div>
+                    <div class="hero-content">
+
+                        <h1 class="hero-title">Macro Oportunidad en Arandas</h1>
+                        <p class="hero-subtitle">355 hectáreas en zona agroindustrial y tequilera premium</p>
+
+                        <div class="hero-features">
+                            <span>💧 Pozo registrado y 2 ojos de agua</span>
+                            <span>🌾 Tierra agrícola de alto rendimiento</span>
+                            <span>🏭 Ideal para destiladora o procesadora</span>
+                            <span>⚡ Viable para paneles solares</span>
+                            <span>🚛 Conectividad logística estratégica</span>
+                        </div>
+
+                        <a href="#contacto" class="btn-elegante btn-dorado">
+                            <i class="bi bi-calendar-check me-2"></i>Agendar cita
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide Pénjamo -->
+            <div class="carousel-item">
+                <div class="hero-slide" style="background-image: url('images/penjamo1.jpeg');">
+                    <div class="hero-overlay"></div>
+                    <div class="hero-content">
+
+                        <h1 class="hero-title">Macrolote en Pénjamo</h1>
+                        <p class="hero-subtitle">Terreno agroindustrial con conectividad estratégica</p>
+
+                        <div class="hero-features">
+                            <span>🌾 384 hectáreas totales</span>
+                            <span>💧 Ojo de agua dentro del predio</span>
+                            <span>🚛 Acceso a carreteras federal y estatal</span>
+                            <span>⚡ Gas natural cercano</span>
+                            <span>🚆 Vía férrea a 5 km</span>
+                        </div>
+
+                        <a href="#contacto" class="btn-elegante btn-dorado">
+                            <i class="bi bi-images me-2"></i>Ver más información
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- CONTROLES (DENTRO del carousel) -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+
+    </div>
+
+</header>
+
+
+
+
+
+
+
+<!-- CATÁLOGO LUXURY -->
+<section class="catalogo-luxury">
+    <div class="container">
+
+        <div class="section-header text-center">
+            <span class="section-badge">Propiedades</span>
+            <h2 class="section-title">Catálogo Exclusivo</h2>
+            <p class="section-subtitle">Selecciona el desarrollo que deseas conocer</p>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+<!-- TARJETA RANCHO -->
+<div class="col-md-5 col-lg-5">
+    <div class="card-propiedad">
+        <div class="img-container">
+            <img src="images/terreno2.jpeg">
+            <div class="overlay"></div>
+            <div class="precio">$450 Millones MXN</div>
+        </div>
+
+        <div class="contenido">
+            <h5>Rancho en Lagos de Moreno</h5>
+            <p>1700 hectáreas con abundancia de agua y excelente conectividad</p>
+
+            <a href="#propiedad2" class="btn-propiedad">
+                Ver información
+            </a>
+        </div>
+    </div>
+</div>
+
+          <!-- TARJETA ARANDAS -->
+<div class="col-md-5 col-lg-5">
+    <div class="card-propiedad">
+        <div class="img-container">
+            <img src="images/arandas5.jpeg">
+            <div class="overlay"></div>
+            <div class="precio">355 Hectáreas</div>
+        </div>
+
+        <div class="contenido">
+            <h5>Macro Oportunidad en Arandas</h5>
+            <p>Terreno agroindustrial y tequilero a pie de carretera</p>
+
+            <a href="#propiedad3" class="btn-propiedad">
+                Ver información
+            </a>
+        </div>
+    </div>
+</div>
+
+            <!-- TARJETA PÉNJAMO -->
+<div class="col-md-5 col-lg-5">
+    <div class="card-propiedad">
+        <div class="img-container">
+            <img src="images/penjamo1.jpeg">
+            <div class="overlay"></div>
+            <div class="precio">$190,000 / hectárea</div>
+        </div>
+
+        <div class="contenido">
+            <h5>Macrolote en Pénjamo</h5>
+            <p>Terreno agroindustrial con agua, gas y excelente conectividad</p>
+
+            <a href="#propiedad-penjamo" class="btn-propiedad">
+                Ver información
+            </a>
+        </div>
+    </div>
+</div>
+
+        </div>
+
+    </div>
+</section>
+
+
+
+
+
+<!-- Property Details Section -->
+<section id="propiedad2" class="property-section">
+    <div class="container">
+
+        <div class="section-header text-center">
+            <span class="section-badge">Rancho en Lagos de Moreno</span>
+            <h2 class="section-title">1700 Hectáreas con Gran Potencial</h2>
+            <p class="section-subtitle">
+                Propiedad ideal para desarrollo agrícola, ganadero o inversión patrimonial
+            </p>
+        </div>
+
+        <div class="row g-4">
+
+            <!-- UBICACIÓN -->
+            <div class="col-lg-6">
+                <div class="card-luxury">
+                    <div class="icono-dorado">
+                        <i class="bi bi-geo-alt-fill"></i>
+                    </div>
+                    <h3>Ubicación Estratégica</h3>
+                    <ul class="luxury-list">
+                        <li>📍 Cerca de Lagos de Moreno, Jalisco</li>
+                        <li>🚗 Aprox. 20-25 minutos de la ciudad</li>
+                        <li>🛣️ Conectividad hacia San Juan de los Lagos</li>
+                        <li>🌿 Zona tranquila y de fácil acceso</li>
+                        <li>🚜 Caminos de terracería en excelentes condiciones</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- CARACTERÍSTICAS -->
+            <div class="col-lg-6">
+                <div class="card-luxury">
+                    <div class="icono-dorado">
+                        <i class="bi bi-house-fill"></i>
+                    </div>
+                    <h3>Características del Rancho</h3>
+                    <ul class="luxury-list">
+                        <li>🌾 1700 hectáreas totales</li>
+                        <li>📐 1300 hectáreas completamente planas</li>
+                        <li>⛰️ Lomas suaves con excelente terreno</li>
+                        <li>💧 Manantial natural y pozo de agua</li>
+                        <li>🚰 Vena de agua de 5 pulgadas</li>
+                        <li>⚡ Cuenta con electricidad</li>
+                        <li>🔐 Acceso controlado</li>
+                        <li>🏗️ Acceso para maquinaria pesada</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- INVERSIÓN -->
+        <div class="specs-section">
+            <div class="row g-4">
+
+                <!-- PRECIO -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card-luxury">
+                        <div class="icono-dorado">
+                            <i class="bi bi-cash-coin"></i>
+                        </div>
+                        <h4>Información de Inversión</h4>
+                        <p>💰 Precio total: $450 Millones MXN</p>
+                        <p>📄 Propiedad próxima a liberarse</p>
+                        <p>📅 Disponible de julio a septiembre</p>
+                        <p>📈 Excelente oportunidad patrimonial</p>
+                    </div>
+                </div>
+
+                <!-- POTENCIAL -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card-luxury">
+                        <div class="icono-dorado">
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <h4>Potencial del Terreno</h4>
+                        <p>🌾 Ideal para agricultura y ganadería</p>
+                        <p>🏗️ Potencial para desarrollo industrial</p>
+                        <p>🚜 Terreno apto para maquinaria pesada</p>
+                        <p>💧 Abundancia de agua natural</p>
+                    </div>
+                </div>
+
+                <!-- BENEFICIOS -->
+                <div class="col-lg-4 col-md-12">
+                    <div class="card-luxury">
+                        <div class="icono-dorado">
+                            <i class="bi bi-stars"></i>
+                        </div>
+                        <h4>Beneficios Exclusivos</h4>
+                        <p>🌿 Zona privada y tranquila</p>
+                        <p>🛣️ Excelente conectividad regional</p>
+                        <p>⚡ Infraestructura básica disponible</p>
+                        <p>📈 Alta proyección de crecimiento</p>
+                        <p>🚀 Gran oportunidad de inversión a futuro</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <small class="text-muted">May 2026</small>
+    </div>
+</section>
+
+<!-- Galería Rancho Lagos de Moreno -->
+<section id="galeria" class="gallery-section">
+    <div class="container">
+
+        <div class="section-header text-center">
+            <span class="section-badge">Rancho en Lagos de Moreno</span>
+            <h2 class="section-title">Galería del Terreno</h2>
+            <p class="section-subtitle">
+                Conoce las características, accesos y entorno natural de la propiedad
+            </p>
+        </div>
+
+        <div class="row g-4">
+
+            <!-- Imagen 1 -->
+            <div class="col-md-4 col-sm-6">
+                <div class="property-card plano-destacado">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#planoModal" data-img="images/terreno1.jpeg">
+                        <img src="images/terreno1.jpeg" class="property-img">
+                    </a>
+                    <div class="property-overlay">
+                        <span class="property-price">🌿 Vista general del terreno</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Imagen 2 -->
+            <div class="col-md-4 col-sm-6">
+                <div class="property-card plano-destacado">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#planoModal" data-img="images/terreno2.jpeg">
+                        <img src="images/terreno2.jpeg" class="property-img">
+                    </a>
+                    <div class="property-overlay">
+                        <span class="property-price">🌄 Terreno mayormente plano</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Imagen 3 -->
+            <div class="col-md-4 col-sm-6">
+                <div class="property-card plano-destacado">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#planoModal" data-img="images/terreno3.jpeg">
+                        <img src="images/terreno3.jpeg" class="property-img">
+                    </a>
+                    <div class="property-overlay">
+                        <span class="property-price">💧 Zona con manantial</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Imagen 4 -->
+            <div class="col-md-4 col-sm-6">
+                <div class="property-card plano-destacado">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#planoModal" data-img="images/terreno4.jpeg">
+                        <img src="images/terreno4.jpeg" class="property-img">
+                    </a>
+                    <div class="property-overlay">
+                        <span class="property-price">🚜 Acceso para maquinaria pesada</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Imagen 5 -->
+            <div class="col-md-4 col-sm-6">
+                <div class="property-card plano-destacado">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#planoModal" data-img="images/terreno5.jpeg">
+                        <img src="images/terreno5.jpeg" class="property-img">
+                    </a>
+                    <div class="property-overlay">
+                        <span class="property-price">🛣️ Caminos en excelente estado</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Imagen 6 -->
+            <div class="col-md-4 col-sm-6">
+                <div class="property-card plano-destacado">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#planoModal" data-img="images/terreno6.jpeg">
+                        <img src="images/terreno6.jpeg" class="property-img">
+                    </a>
+                    <div class="property-overlay">
+                        <span class="property-price">⚡ Infraestructura y conectividad</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Imagen 7 -->
+            <div class="col-md-4 col-sm-6">
+                <div class="property-card plano-destacado">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#planoModal" data-img="images/terreno7.jpeg">
+                        <img src="images/terreno7.jpeg" class="property-img">
+                    </a>
+                    <div class="property-overlay">
+                        <span class="property-price">🌾 Extensión de 1700 hectáreas</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Imagen 8 -->
+            <div class="col-md-4 col-sm-6">
+                <div class="property-card plano-destacado">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#planoModal" data-img="images/terreno8.jpeg">
+                        <img src="images/terreno8.jpeg" class="property-img">
+                    </a>
+                    <div class="property-overlay">
+                        <span class="property-price">🌿 Entorno natural y tranquilo</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Imagen 9 -->
+<div class="col-md-4 col-sm-6">
+    <div class="property-card plano-destacado">
+        <a href="#" data-bs-toggle="modal" data-bs-target="#planoModal" data-img="images/terreno9.jpeg">
+            <img src="images/terreno9.jpeg" class="property-img">
+        </a>
+        <div class="property-overlay">
+            <span class="property-price">🏞️ Vista panorámica del rancho</span>
+        </div>
+    </div>
+</div>
+
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+<!-- Location Section -->
+<section id="ubicacion" class="location-section">
+    <div class="container">
+
+        <div class="section-header text-center">
+            <span class="section-badge">Ubicación</span>
+            <h2 class="section-title">Rancho en Lagos de Moreno</h2>
+            <p class="section-subtitle">
+                Propiedad con excelente conectividad, abundancia de agua y gran potencial de inversión
+            </p>
+        </div>
+
+        <div class="row g-4 align-items-stretch">
+
+            <!-- INFO -->
+            <div class="col-lg-5">
+                <div class="card-luxury h-100">
+                    <h3><i class="bi bi-geo-alt-fill me-2"></i>Zona Estratégica</h3>
+                    <ul class="luxury-list">
+                        <li><i class="bi bi-check-circle-fill"></i> Ubicado cerca de Lagos de Moreno, Jalisco</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Aprox. 20-25 minutos de la ciudad</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Conectividad hacia San Juan de los Lagos</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Terracería en excelentes condiciones</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Acceso para maquinaria pesada</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Zona privada, tranquila y con acceso controlado</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- MAPA -->
+            <div class="col-lg-7">
+                <div class="map-container h-100">
+                    <iframe
+                        src="https://www.google.com/maps?q=21.5551186,-101.8430023&output=embed"
+                        loading="lazy"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+
+<!-- Property Details Section -->
+<section id="propiedad3" class="property-section">
+    <div class="container">
+
+        <div class="section-header text-center">
+            <span class="section-badge">Arandas, Jalisco</span>
+            <h2 class="section-title">Macro Oportunidad Agroindustrial</h2>
+            <p class="section-subtitle">
+                355 hectáreas a pie de carretera en zona tequilera premium con alto potencial productivo
+            </p>
+        </div>
+
+        <div class="row g-4">
+
+            <!-- Ubicación -->
+            <div class="col-lg-6">
+                <div class="card-luxury">
+                    <div class="icono-dorado">
+                        <i class="bi bi-geo-alt-fill"></i>
+                    </div>
+                    <h3>Ubicación Estratégica</h3>
+                    <ul class="luxury-list">
+                        <li>📍 Arandas, Los Altos de Jalisco</li>
+                        <li>🚗 A pie de carretera</li>
+                        <li>🛣️ Zona tequilera de alto valor agroindustrial</li>
+                        <li>🚛 Conectividad para logística pesada y exportación</li>
+                        <li>🌾 Región con alta actividad agrícola y tequilera</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Características -->
+            <div class="col-lg-6">
+                <div class="card-luxury">
+                    <div class="icono-dorado">
+                        <i class="bi bi-house-fill"></i>
+                    </div>
+                    <h3>Características del Terreno</h3>
+                    <ul class="luxury-list">
+                        <li>🌾 355 hectáreas totales</li>
+                        <li>🌱 Tierra roja y arcillosa de alto rendimiento</li>
+                        <li>💧 Pozo registrado con 25,000 litros de producción</li>
+                        <li>💦 2 ojos de agua adicionales</li>
+                        <li>⚡ Potencial para energía solar</li>
+                        <li>🏭 Ideal para destiladora o procesadora de agave</li>
+                        <li>🚜 Uso agrícola, ganadero o industrial</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Inversión -->
+        <div class="specs-section">
+            <div class="row g-4">
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card-luxury">
+                        <div class="icono-dorado">
+                            <i class="bi bi-cash-coin"></i>
+                        </div>
+                        <h4>Inversión</h4>
+                        <p>💰 Oportunidad de macro inversión</p>
+                        <p>📍 Ubicación premium en zona tequilera</p>
+                        <p>🚀 Alto potencial de retorno</p>
+                        <p>📈 Terreno estratégico para industria</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card-luxury">
+                        <div class="icono-dorado">
+                            <i class="bi bi-gear-fill"></i>
+                        </div>
+                        <h4>Potencial Productivo</h4>
+                        <p>🌾 Agricultura tecnificada</p>
+                        <p>🍸 Industria tequilera</p>
+                        <p>🐄 Ganadería y producción pecuaria</p>
+                        <p>🌳 Cultivos de alto valor (agave, etc.)</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-12">
+                    <div class="card-luxury">
+                        <div class="icono-dorado">
+                            <i class="bi bi-stars"></i>
+                        </div>
+                        <h4>Ventajas Clave</h4>
+                        <p>💧 Agua garantizada en la propiedad</p>
+                        <p>⚡ Viable para energías renovables</p>
+                        <p>🚛 Acceso directo a carretera</p>
+                        <p>📈 Zona de alta demanda agroindustrial</p>
+                        <p>🔑 Excelente oportunidad patrimonial</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <small class="text-muted">May 2026</small>
+
+    </div>
+</section>
+
+
+<!-- Galería Arandas -->
+<section id="galeria-arandas" class="gallery-section">
+    <div class="container">
+
+        <div class="section-header text-center">
+            <span class="section-badge">Macro Inversión Agroindustrial</span>
+            <h2 class="section-title">Arandas, Jalisco</h2>
+        </div>
+
+        <div class="row g-4">
+
+            <!-- Terreno 1 -->
+            <div class="col-md-4 col-sm-6">
+                <div class="property-card plano-destacado">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#planoModal" data-img="images/arandas1.jpeg">
+                        <img src="images/arandas1.jpeg" class="property-img">
+                    </a>
+                    <div class="property-overlay">
+                        <span class="property-price">📍 Ubicación a pie de carretera</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Terreno 2 -->
+            <div class="col-md-4 col-sm-6">
+                <div class="property-card plano-destacado">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#planoModal" data-img="images/arandas2.jpeg">
+                        <img src="images/arandas2.jpeg" class="property-img">
+                    </a>
+                    <div class="property-overlay">
+                        <span class="property-price">🌾 Tierra roja de alto rendimiento</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Terreno 3 -->
+            <div class="col-md-4 col-sm-6">
+                <div class="property-card plano-destacado">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#planoModal" data-img="images/arandas3.jpeg">
+                        <img src="images/arandas3.jpeg" class="property-img">
+                    </a>
+                    <div class="property-overlay">
+                        <span class="property-price">💧 Recursos hídricos naturales</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Terreno 4 -->
+            <div class="col-md-4 col-sm-6">
+                <div class="property-card plano-destacado">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#planoModal" data-img="images/arandas4.jpeg">
+                        <img src="images/arandas4.jpeg" class="property-img">
+                    </a>
+                    <div class="property-overlay">
+                        <span class="property-price">🚛 Conectividad logística</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Terreno 5 -->
+            <div class="col-md-4 col-sm-6">
+                <div class="property-card plano-destacado">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#planoModal" data-img="images/arandas5.jpeg">
+                        <img src="images/arandas5.jpeg" class="property-img">
+                    </a>
+                    <div class="property-overlay">
+                        <span class="property-price">🌿 355 hectáreas disponibles</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Terreno 6 -->
+            <div class="col-md-4 col-sm-6">
+                <div class="property-card plano-destacado">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#planoModal" data-img="images/arandas6.jpeg">
+                        <img src="images/arandas6.jpeg" class="property-img">
+                    </a>
+                    <div class="property-overlay">
+                        <span class="property-price">⚡ Potencial energético solar</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Terreno 7 -->
+            <div class="col-md-4 col-sm-6">
+                <div class="property-card plano-destacado">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#planoModal" data-img="images/arandas7.jpeg">
+                        <img src="images/arandas7.jpeg" class="property-img">
+                    </a>
+                    <div class="property-overlay">
+                        <span class="property-price">🏭 Uso agroindustrial</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Terreno 8 -->
+            <div class="col-md-4 col-sm-6">
+                <div class="property-card plano-destacado">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#planoModal" data-img="images/arandas8.jpeg">
+                        <img src="images/arandas8.jpeg" class="property-img">
+                    </a>
+                    <div class="property-overlay">
+                        <span class="property-price">🌾 Producción agrícola y agave</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Terreno 9 -->
+            <div class="col-md-4 col-sm-6">
+                <div class="property-card plano-destacado">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#planoModal" data-img="images/arandas9.jpeg">
+                        <img src="images/arandas9.jpeg" class="property-img">
+                    </a>
+                    <div class="property-overlay">
+                        <span class="property-price">🚀 Inversión de alto potencial</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- CTA -->
+        <div class="text-center mt-4">
+            <a href="https://wa.me/524778033175?text=Hola%2C%20me%20interesa%20informaci%C3%B3n%20sobre%20el%20terreno%20en%20Arandas."
+               class="btn-elegante btn-dorado" target="_blank">
+                📲 Solicitar información por WhatsApp
+            </a>
+        </div>
+
+    </div>
+</section>
+
+<!-- VIDEO -->
+<section class="video-section">
+
+    <h2 class="section-title">Conoce el Terreno en Arandas</h2>
+
+    <div class="container">
+        <div class="row justify-content-center">
+
+            <!-- Video 1 -->
+            <div class="col-12 col-md-6 mb-3">
+                <video controls playsinline preload="metadata"
+                    style="width:100%; border-radius:12px;"
+                    poster="images/arandas1.jpeg">
+                    <source src="images/arandas1.mp4" type="video/mp4">
+                    Tu navegador no soporta video.
+                </video>
+            </div>
+
+            <!-- Video 2 -->
+            <div class="col-12 col-md-6 mb-3">
+                <video controls playsinline preload="metadata"
+                    style="width:100%; border-radius:12px;"
+                    poster="images/arandas2.jpeg">
+                    <source src="images/arandas2.mp4" type="video/mp4">
+                    Tu navegador no soporta video.
+                </video>
+            </div>
+
+            <!-- Video 3 -->
+            <div class="col-12 col-md-6 mb-3">
+                <video controls playsinline preload="metadata"
+                    style="width:100%; border-radius:12px;"
+                    poster="images/arandas3.jpeg">
+                    <source src="images/arandas3.mp4" type="video/mp4">
+                    Tu navegador no soporta video.
+                </video>
+            </div>
+
+            <!-- Video 4 -->
+            <div class="col-12 col-md-6 mb-3">
+                <video controls playsinline preload="metadata"
+                    style="width:100%; border-radius:12px;"
+                    poster="images/arandas4.jpeg">
+                    <source src="images/arandas4.mp4" type="video/mp4">
+                    Tu navegador no soporta video.
+                </video>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+
+
+
+   <!-- Location Section -->
+<section id="ubicacion-arandas" class="location-section">
+    <div class="container">
+
+        <div class="section-header text-center">
+            <span class="section-badge">Ubicación</span>
+            <h2 class="section-title">Terreno en Arandas, Jalisco</h2>
+            <p class="section-subtitle">
+                Macrolote agroindustrial a pie de carretera en Los Altos de Jalisco
+            </p>
+        </div>
+
+        <div class="row g-4 align-items-stretch">
+
+            <!-- INFO -->
+            <div class="col-lg-5">
+                <div class="card-luxury h-100">
+                    <h3><i class="bi bi-geo-alt-fill me-2"></i>Zona Estratégica</h3>
+                    <ul class="luxury-list">
+                        <li><i class="bi bi-check-circle-fill"></i> Ubicado en Arandas, Jalisco</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Zona tequilera de Los Altos</li>
+                        <li><i class="bi bi-check-circle-fill"></i> A pie de carretera principal</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Conectividad regional para logística pesada</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Entorno agroindustrial consolidado</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Alto potencial de desarrollo e inversión</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- MAPA -->
+            <div class="col-lg-7">
+                <div class="map-container h-100">
+                    <iframe
+                        src="https://www.google.com/maps?q=21.0051318,-101.526404&output=embed"
+                        loading="lazy"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Property Details Section -->
+<section id="propiedad-penjamo" class="property-section">
+    <div class="container">
+
+        <div class="section-header text-center">
+            <span class="section-badge">Pénjamo, Guanajuato</span>
+            <h2 class="section-title">Macrolote Agroindustrial en Venta</h2>
+            <p class="section-subtitle">
+                Terreno de gran extensión con agua, gas natural y conectividad estratégica para desarrollo productivo
+            </p>
+        </div>
+
+        <div class="row g-4">
+
+            <!-- Ubicación -->
+            <div class="col-lg-6">
+                <div class="card-luxury">
+                    <div class="icono-dorado">
+                        <i class="bi bi-geo-alt-fill"></i>
+                    </div>
+                    <h3>Ubicación Estratégica</h3>
+                    <ul class="luxury-list">
+                        <li>📍 Sur de Pénjamo, Guanajuato</li>
+                        <li>🛣️ A 10 km de carretera federal Pénjamo–La Piedad</li>
+                        <li>🚗 A menos de 10 minutos de la ciudad de Pénjamo</li>
+                        <li>🚆 Vía férrea a 5 km del predio</li>
+                        <li>🛣️ Conexión a carretera estatal y federal</li>
+                        <li>🚛 Acceso por carretera asfaltada</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Características -->
+            <div class="col-lg-6">
+                <div class="card-luxury">
+                    <div class="icono-dorado">
+                        <i class="bi bi-house-fill"></i>
+                    </div>
+                    <h3>Características del Terreno</h3>
+                    <ul class="luxury-list">
+                        <li>🌾 384 hectáreas totales</li>
+                        <li>💧 Ojo de agua dentro del predio</li>
+                        <li>🔥 Gas natural industrial a 5 km</li>
+                        <li>🚰 Zona agrícola de riego y temporal</li>
+                        <li>🐄 Áreas de agostadero y uso mixto</li>
+                        <li>🏙️ Zona con porción urbana dentro del polígono</li>
+                        <li>⚡ Infraestructura energética cercana</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Inversión -->
+        <div class="specs-section">
+            <div class="row g-4">
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card-luxury">
+                        <div class="icono-dorado">
+                            <i class="bi bi-cash-coin"></i>
+                        </div>
+                        <h4>Inversión</h4>
+                        <p>💰 Aproximado: $190,000 por hectárea</p>
+                        <p>📈 Gran extensión a bajo costo por m²</p>
+                        <p>🚀 Alto potencial de valorización</p>
+                        <p>🔑 Ideal para inversión patrimonial o industrial</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card-luxury">
+                        <div class="icono-dorado">
+                            <i class="bi bi-gear-fill"></i>
+                        </div>
+                        <h4>Potencial Productivo</h4>
+                        <p>🌾 Agricultura tecnificada y de temporal</p>
+                        <p>🐄 Ganadería extensiva</p>
+                        <p>🏭 Desarrollo agroindustrial</p>
+                        <p>⚡ Infraestructura clave cercana (gas y vías)</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-12">
+                    <div class="card-luxury">
+                        <div class="icono-dorado">
+                            <i class="bi bi-stars"></i>
+                        </div>
+                        <h4>Ventajas Clave</h4>
+                        <p>💧 Recursos hídricos dentro del predio</p>
+                        <p>🚛 Conectividad carretera y ferroviaria</p>
+                        <p>🔥 Gas natural industrial cercano</p>
+                        <p>📍 Ubicación estratégica en corredor logístico</p>
+                        <p>🚀 Excelente oportunidad de inversión a gran escala</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <small class="text-muted">May 2026</small>
+
+    </div>
+</section>
+
+
+
+<!-- Galería Pénjamo -->
+<section id="galeria-penjamo" class="gallery-section">
+    <div class="container">
+
+        <div class="section-header text-center">
+            <span class="section-badge">Macrolote Agroindustrial</span>
+            <h2 class="section-title">Pénjamo, Guanajuato</h2>
+        </div>
+
+        <div class="row g-4">
+
+            <!-- 1 -->
+            <div class="col-md-4 col-sm-6">
+                <div class="property-card plano-destacado">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#planoModal" data-img="images/penjamo1.jpeg">
+                        <img src="images/penjamo1.jpeg" class="property-img">
+                    </a>
+                    <div class="property-overlay">
+                        <span class="property-price">📍 Acceso principal al predio</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2 -->
+            <div class="col-md-4 col-sm-6">
+                <div class="property-card plano-destacado">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#planoModal" data-img="images/penjamo2.jpeg">
+                        <img src="images/penjamo2.jpeg" class="property-img">
+                    </a>
+                    <div class="property-overlay">
+                        <span class="property-price">🚜 Vialidad para maquinaria pesada</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3 -->
+            <div class="col-md-4 col-sm-6">
+                <div class="property-card plano-destacado">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#planoModal" data-img="images/penjamo3.jpeg">
+                        <img src="images/penjamo3.jpeg" class="property-img">
+                    </a>
+                    <div class="property-overlay">
+                        <span class="property-price">💧 Zona con ojo de agua natural</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4 -->
+            <div class="col-md-4 col-sm-6">
+                <div class="property-card plano-destacado">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#planoModal" data-img="images/penjamo4.jpeg">
+                        <img src="images/penjamo4.jpeg" class="property-img">
+                    </a>
+                    <div class="property-overlay">
+                        <span class="property-price">⚡ Infraestructura eléctrica cercana</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 5 -->
+            <div class="col-md-4 col-sm-6">
+                <div class="property-card plano-destacado">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#planoModal" data-img="images/penjamo5.jpeg">
+                        <img src="images/penjamo5.jpeg" class="property-img">
+                    </a>
+                    <div class="property-overlay">
+                        <span class="property-price">🌾 Suelo agrícola productivo</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 6 -->
+            <div class="col-md-4 col-sm-6">
+                <div class="property-card plano-destacado">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#planoModal" data-img="images/penjamo6.jpeg">
+                        <img src="images/penjamo6.jpeg" class="property-img">
+                    </a>
+                    <div class="property-overlay">
+                        <span class="property-price">🚛 Conexión carretera federal cercana</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 7 -->
+            <div class="col-md-4 col-sm-6">
+                <div class="property-card plano-destacado">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#planoModal" data-img="images/penjamo7.jpeg">
+                        <img src="images/penjamo7.jpeg" class="property-img">
+                    </a>
+                    <div class="property-overlay">
+                        <span class="property-price">🏭 Zona con potencial industrial</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 8 -->
+            <div class="col-md-4 col-sm-6">
+                <div class="property-card plano-destacado">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#planoModal" data-img="images/penjamo8.jpeg">
+                        <img src="images/penjamo8.jpeg" class="property-img">
+                    </a>
+                    <div class="property-overlay">
+                        <span class="property-price">🌿 Área de cultivo extensivo</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 9 -->
+            <div class="col-md-4 col-sm-6">
+                <div class="property-card plano-destacado">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#planoModal" data-img="images/penjamo9.jpeg">
+                        <img src="images/penjamo9.jpeg" class="property-img">
+                    </a>
+                    <div class="property-overlay">
+                        <span class="property-price">📈 Alta proyección de plusvalía</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 10 -->
+            <div class="col-md-4 col-sm-6">
+                <div class="property-card plano-destacado">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#planoModal" data-img="images/penjamo10.jpeg">
+                        <img src="images/penjamo10.jpeg" class="property-img">
+                    </a>
+                    <div class="property-overlay">
+                        <span class="property-price">🌄 Topografía semi plana</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 11 -->
+            <div class="col-md-4 col-sm-6">
+                <div class="property-card plano-destacado">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#planoModal" data-img="images/penjamo11.jpeg">
+                        <img src="images/penjamo11.jpeg" class="property-img">
+                    </a>
+                    <div class="property-overlay">
+                        <span class="property-price">🛣️ Camino interno de acceso</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 12 -->
+            <div class="col-md-4 col-sm-6">
+                <div class="property-card plano-destacado">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#planoModal" data-img="images/penjamo12.jpeg">
+                        <img src="images/penjamo12.jpeg" class="property-img">
+                    </a>
+                    <div class="property-overlay">
+                        <span class="property-price">🌾 Zona de uso agrícola</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 13 -->
+            <div class="col-md-4 col-sm-6">
+                <div class="property-card plano-destacado">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#planoModal" data-img="images/penjamo13.jpeg">
+                        <img src="images/penjamo13.jpeg" class="property-img">
+                    </a>
+                    <div class="property-overlay">
+                        <span class="property-price">🚜 Acceso para tractores y equipo</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 14 -->
+            <div class="col-md-4 col-sm-6">
+                <div class="property-card plano-destacado">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#planoModal" data-img="images/penjamo14.jpeg">
+                        <img src="images/penjamo14.jpeg" class="property-img">
+                    </a>
+                    <div class="property-overlay">
+                        <span class="property-price">💧 Recursos hídricos cercanos</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 15 -->
+            <div class="col-md-4 col-sm-6">
+                <div class="property-card plano-destacado">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#planoModal" data-img="images/penjamo15.jpeg">
+                        <img src="images/penjamo15.jpeg" class="property-img">
+                    </a>
+                    <div class="property-overlay">
+                        <span class="property-price">⚡ Posible conexión energética</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 16 -->
+            <div class="col-md-4 col-sm-6">
+                <div class="property-card plano-destacado">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#planoModal" data-img="images/penjamo16.jpeg">
+                        <img src="images/penjamo16.jpeg" class="property-img">
+                    </a>
+                    <div class="property-overlay">
+                        <span class="property-price">🌿 Zona natural abierta</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 17 -->
+            <div class="col-md-4 col-sm-6">
+                <div class="property-card plano-destacado">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#planoModal" data-img="images/penjamo17.jpeg">
+                        <img src="images/penjamo17.jpeg" class="property-img">
+                    </a>
+                    <div class="property-overlay">
+                        <span class="property-price">🚛 Conectividad regional estratégica</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 18 -->
+            <div class="col-md-4 col-sm-6">
+                <div class="property-card plano-destacado">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#planoModal" data-img="images/penjamo18.jpeg">
+                        <img src="images/penjamo18.jpeg" class="property-img">
+                    </a>
+                    <div class="property-overlay">
+                        <span class="property-price">🏗️ Área de expansión futura</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 19 -->
+            <div class="col-md-4 col-sm-6">
+                <div class="property-card plano-destacado">
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#planoModal" data-img="images/penjamo19.jpeg">
+                        <img src="images/penjamo19.jpeg" class="property-img">
+                    </a>
+                    <div class="property-overlay">
+                        <span class="property-price">📍 Punto final del polígono</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PDF 1 -->
+            <div class="col-md-6 col-sm-12">
+                <div class="property-card plano-destacado">
+                    <div class="img-container">
+                        <img src="images/pdf-icon.jpg" class="property-img">
+                        <div class="overlay"></div>
+                        <div class="precio" style="background:#c0392b;">📄 DOCUMENTO PDF</div>
+                    </div>
+
+                    <div class="contenido text-center">
+                        <h5>Fracción 5 Pénjamo</h5>
+                        <p>Documento técnico del predio</p>
+
+                        <a href="images/fraccion 5 penjamo.pdf"
+                           target="_blank"
+                           class="btn-propiedad"
+                           style="background:#c0392b; color:#fff;">
+                            📥 Abrir PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PDF 2 -->
+            <div class="col-md-6 col-sm-12">
+                <div class="property-card plano-destacado">
+                    <div class="img-container">
+                        <img src="images/pdf-icon.jpg" class="property-img">
+                        <div class="overlay"></div>
+                        <div class="precio" style="background:#c0392b;">📄 DOCUMENTO PDF</div>
+                    </div>
+
+                    <div class="contenido text-center">
+                        <h5>Zona Libre Tercera Fracción</h5>
+                        <p>Información legal del predio</p>
+
+                        <a href="images/ZONA LIBRE TERCERA FRACCION.PDF"
+                           target="_blank"
+                           class="btn-propiedad"
+                           style="background:#c0392b; color:#fff;">
+                            📥 Abrir PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Location Section -->
+<section id="ubicacion-penjamo" class="location-section">
+    <div class="container">
+
+        <div class="section-header text-center">
+            <span class="section-badge">Ubicación</span>
+            <h2 class="section-title">Macrolote en Pénjamo, Guanajuato</h2>
+            <p class="section-subtitle">
+                Terreno agroindustrial con conectividad estratégica, agua y acceso a infraestructura clave
+            </p>
+        </div>
+
+        <div class="row g-4 align-items-stretch">
+
+            <!-- INFO -->
+            <div class="col-lg-5">
+                <div class="card-luxury h-100">
+                    <h3><i class="bi bi-geo-alt-fill me-2"></i>Ubicación Estratégica</h3>
+                    <ul class="luxury-list">
+                        <li><i class="bi bi-check-circle-fill"></i> Al sur de Pénjamo, Guanajuato</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Zona “La Lucita de Ledezma” y alrededores</li>
+                        <li><i class="bi bi-check-circle-fill"></i> A 4.5 km de la carretera Pénjamo–La Piedad</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Acceso por carretera asfaltada</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Conexión hacia San Marcos y carretera estatal</li>
+                        <li><i class="bi bi-check-circle-fill"></i> A ~10 minutos de la ciudad de Pénjamo</li>
+                        <li><i class="bi bi-check-circle-fill"></i> Zona con vocación agrícola e industrial</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- MAPA -->
+            <div class="col-lg-7">
+                <div class="map-container h-100">
+                    <iframe
+                        src="https://www.google.com/maps?q=21.5551186,-101.8430023&output=embed"
+                        loading="lazy"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- EXTRA VALOR -->
+        <div class="text-center mt-4">
+            <p class="text-muted">
+                📍 Terreno con acceso estratégico a carreteras estatales y federales, ideal para agricultura, industria ligera y proyectos de inversión a gran escala.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+
+<section id="contacto" class="contacto-section">
+    <div class="container">
+
+        <div class="section-header text-center">
+            <span class="section-badge">Contacto</span>
+            <h2 class="section-title">Habla con tu asesor</h2>
+            <p class="section-subtitle">Agenda tu cita y asegura tu terreno hoy mismo</p>
+        </div>
+
+        
+
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+
+        <!-- BRAND -->
+        <div class="brand-info text-center">
+            <h5> Bienes Raíces</h5>
+            <p>Asesoría confiable para invertir con seguridad</p>
+        </div>
+
+        <!-- LINKS -->
+        <div class="footer-links text-center">
+            <a href="#inicio" class="footer-link">Inicio</a>
+            <a href="#propiedad1" class="footer-link">
+            <a href="#contacto" class="footer-link">Contacto</a>
+        </div>
+
+        <hr class="footer-divider">
+
+        <!-- COPYRIGHT -->
+        <div class="footer-bottom text-center">
+            <p>&copy; 2026 . Todos los derechos reservados.</p>
+        </div>
+
+    </div>
+</footer>
+
+
+
+    <!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Modal dinámico -->
+<div class="modal fade" id="planoModal" tabindex="-1">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content bg-transparent border-0">
+
+            <button type="button" class="btn-close btn-close-white ms-auto me-2 mt-2"
+                data-bs-dismiss="modal"></button>
+
+            <div class="modal-body text-center p-0">
+                <img id="imagenModal" class="img-fluid rounded">
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- Script para cambiar imagen -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    /* =========================
+       MODAL DE PLANO
+    ========================= */
+    const modal = document.getElementById('planoModal');
+    const imagen = document.getElementById('imagenModal');
+
+    if (modal && imagen) {
+        modal.addEventListener('show.bs.modal', function (event) {
+            const trigger = event.relatedTarget;
+            const ruta = trigger.getAttribute('data-img');
+            imagen.src = ruta;
+        });
+    }
+
+});
+
+
+/* =========================
+   VIDEO PLAY
+========================= */
+function playVideo() {
+    const video = document.getElementById("videoDesarrollo");
+    const button = document.querySelector(".play-button");
+
+    if (video) {
+        video.play();
+    }
+
+    if (button) {
+        button.style.display = "none";
+    }
+}
+</script>
+</body>
+
+</html>
